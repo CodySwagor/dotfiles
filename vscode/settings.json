@@ -1,11 +1,93 @@
 {
+  // Language Formatting
   "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoClosingBrackets": "never"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
+    },
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // Window
+  "window.commandCenter": true,
+  "window.closeWhenEmpty": false,
+
+  // Editor
+  "editor.rulers": [80],
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 100,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": true,
+  "editor.minimap.autohide": true,
+  "editor.matchBrackets": "always",
+  "editor.overviewRulerBorder": false,
+  "workbench.tips.enabled": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showIcons": true, // Might be nice to disable
+
+  // JavaScript & TypeScript
+  "typescript.tsserver.maxTsServerMemory": 4096,
+
+  // Git
+  "git.autorefresh": true,
+  "git.decorations.enabled": true,
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.statusBarItem.enabled": true,
+  "git.enableSmartCommit": true,
+  "git.enableCommitSigning": true,
+
+  // Telemetry
+  "telemetry.feedback.enabled": false,
+
+  // Remotes
+  "remote.autoForwardPorts": true
 }
