@@ -1,5 +1,5 @@
 {
-  // Language Formatting
+  // Language Specific Config
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.autoClosingBrackets": "never"
@@ -54,13 +54,27 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.trimTrailingWhitespace": false
+  },
+
+  // General Language Settings
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "json.schemaDownload.enable": true,
 
   // Window
   "window.commandCenter": true,
   "window.closeWhenEmpty": false,
 
   // Editor
+  "breadcrumbs.filePath": "last",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.rulers": [80],
+  "editor.linkedEditing": true,
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 100,
   "editor.formatOnPaste": true,
@@ -68,14 +82,25 @@
   "editor.fontLigatures": true,
   "editor.minimap.enabled": true,
   "editor.minimap.autohide": true,
+  "editor.minimap.renderCharacters": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": false,
   "editor.matchBrackets": "always",
   "editor.overviewRulerBorder": false,
   "workbench.tips.enabled": false,
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.showIcons": true, // Might be nice to disable
+  "workbench.editor.showIcons": true,
 
-  // JavaScript & TypeScript
-  "typescript.tsserver.maxTsServerMemory": 4096,
+  // Terminal
+  "terminal.integrated.allowedLinkSchemes": [
+    "file",
+    "http",
+    "https",
+    "mailto",
+    "vscode",
+    "vscode-insiders",
+    "man"
+  ],
 
   // Git
   "git.autorefresh": true,
@@ -85,9 +110,34 @@
   "git.enableSmartCommit": true,
   "git.enableCommitSigning": true,
 
-  // Telemetry
-  "telemetry.feedback.enabled": false,
-
   // Remotes
-  "remote.autoForwardPorts": true
+  "remote.autoForwardPorts": true,
+
+  // Files
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    ".env*": "dotenv",
+    "*.css": "tailwindcss"
+  },
+
+  // Misc
+  "telemetry.enableTelemetry": false,
+  "telemetry.feedback.enabled": false,
+  "crashReporting.enabled": "off",
+
+  // -------------------------
+  // Extension Specific Config
+  // -------------------------
+
+  // Peacock
+  "peacock.showColorInStatusBar": false,
+
+  // Error Lens
+  "errorLens.excludeBySource": ["eslint(prettier/prettier)"],
+  "errorLens.messageTemplate": "[$count] $message",
+  "errorLens.statusBarIconsEnabled": true,
+  "errorLens.statusBarColorsEnabled": true,
+  "errorLens.statusBarIconsAtZero": "hide"
 }
