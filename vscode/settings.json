@@ -63,7 +63,7 @@
   },
 
   // General Language Settings
-  "typescript.tsserver.maxTsServerMemory": 4096,
+  "js/ts.tsserver.maxMemory": 4096,
   "json.schemaDownload.enable": true,
 
   // Window
