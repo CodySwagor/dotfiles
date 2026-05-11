@@ -71,10 +71,13 @@
   "window.closeWhenEmpty": false,
   "window.restoreWindows": "none",
 
+  // AI Features
+  "chat.disableAIFeatures": true,
+
   // Editor
   "breadcrumbs.filePath": "last",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.rulers": [80],
+  "editor.rulers": [80, 100],
   "editor.linkedEditing": true,
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 100,
@@ -82,7 +85,7 @@
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
   "editor.minimap.enabled": true,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover", // may need to be set as true in some cases 
   "editor.minimap.renderCharacters": true,
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": false,
@@ -110,6 +113,7 @@
   "git.blame.statusBarItem.enabled": true,
   "git.enableSmartCommit": true,
   "git.enableCommitSigning": true,
+  "git.detectWorktrees": true,
 
   // Remotes
   "remote.autoForwardPorts": true,
@@ -140,5 +144,8 @@
   "errorLens.messageTemplate": "[$count] $message",
   "errorLens.statusBarIconsEnabled": true,
   "errorLens.statusBarColorsEnabled": true,
-  "errorLens.statusBarIconsAtZero": "hide"
+  "errorLens.statusBarIconsAtZero": "hide",
+
+  // Claude Code
+  "claudeCode.useTerminal": true
 }
