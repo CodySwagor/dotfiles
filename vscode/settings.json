@@ -114,6 +114,7 @@
   "git.enableSmartCommit": true,
   "git.enableCommitSigning": true,
   "git.detectWorktrees": true,
+  "git.addAICoAuthor": "off",
 
   // Remotes
   "remote.autoForwardPorts": true,
