@@ -69,6 +69,7 @@
   // Window
   "window.commandCenter": true,
   "window.closeWhenEmpty": false,
+  "window.restoreWindows": "none",
 
   // Editor
   "breadcrumbs.filePath": "last",
